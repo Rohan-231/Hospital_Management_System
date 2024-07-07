@@ -23,7 +23,7 @@ public class AdminLogin extends HttpServlet {
 
 			HttpSession session = req.getSession();
 
-			if ("roh@gmail.com".equals(email) && "rohan".equals(password)) {
+			if ("user_name".equals(email) && "pass".equals(password)) {
 				session.setAttribute("adminObj", new User());
 				resp.sendRedirect("admin/index.jsp");
 			} else {
